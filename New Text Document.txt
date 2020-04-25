@@ -1,0 +1,102 @@
+import java.util.Scanner;
+import java.lang.Math;
+class SubFunctions
+  {
+     Scanner S1=new Scanner(System.in);
+      void Minimum()
+         {
+             int num1,num2;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+             num2=S1.nextInt();
+	System.out.println("Minimum value="+Math.min(num1,num2));
+       }
+      void Maximum()
+         {
+             int num1,num2;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+             num2=S1.nextInt();
+	System.out.println("Maximum value="+Math.max(num1,num2));
+       }
+     void Square()
+         {
+             int num1;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+	System.out.println("Square Root value="+Math.sqrt(num1));
+       }
+     void power()
+         {
+             int num1;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+             System.out.println("Enter power:");
+            int power=S1.nextInt();
+	System.out.println("Power of given number="+Math.pow(num1,power));
+       }
+      void Absolute()
+         {
+             int num1;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+	System.out.println("Absolute value="+Math.abs(num1));
+       }
+       void Exponent()
+         {
+             int num1;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+	System.out.println("Exponent value="+Math.exp(num1));
+       }
+      void Round()
+         {
+             int num1;
+	 System.out.println("Enter your Number:");
+             num1=S1.nextInt();
+	System.out.println("Round value="+Math.round(num1));
+       }
+}
+class mainClass
+ {
+     public static void main(String args[])
+	{
+	      int choice;
+                  SubFunctions S2=new SubFunctions();
+	     Scanner S1=new Scanner(System.in);
+	    System.out.println("*******************************************");     
+                  System.out.println("1.Find Minimum Number.");     
+	    System.out.println("2.Find Maximum Number.");     
+	    System.out.println("3.Find Square root of given Number.");     
+	   System.out.println("4.Find Power of given Number.");     
+	   System.out.println("5.Find Absolute value of given Number.");     
+	   System.out.println("6.Find Exponent of Number.");   
+	  System.out.println("7.Find Round value of Number.");   
+	  System.out.println("*******************************************");       
+              System.out.println("Enter your choice:");
+                 choice=S1.nextInt();
+          switch(choice)
+               {
+		case 1:
+                                   S2.Minimum();
+                                   break;
+                        case 2:
+		         S2.Maximum();
+                                 break;
+	           case 3:   
+		         S2.Square();
+                                 break;
+                       case 4:   
+		         S2.Power();
+                                 break;              
+	          case 5:   
+		         S2.Absolute();
+                                 break;
+	           case 6:   
+		         S2.Exponent();
+                                 break;
+	          case 7:   
+		         S2.Round();
+                                 break;
+           }
+}
